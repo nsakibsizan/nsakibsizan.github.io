@@ -424,7 +424,7 @@ a:active {
 
 .site-hero h1,
 .site-hero .lead {
-  font-weight: 200;
+  font-weight: 300;
   color: #fff;
 }
 
@@ -468,7 +468,9 @@ a:active {
 
 .lead {
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 1.1;
+  color: #c2bebe;
+  font-size: 18px;
 }
 
 .site-service-item {
@@ -561,27 +563,21 @@ a:active {
 
 .centered-img {
   max-width: 100%;
-  /* Ensures the image is responsive */
   height: auto;
-  /* Maintains the aspect ratio */
   width: 900px;
-  /* You can adjust this to set the width */
   max-height: 500px;
-  /* Optional: Limits the height */
 }
 
 .row img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
-  /* Ensures the image maintains its aspect ratio */
   display: block;
 }
 
 @media (max-width: 768px) {
   .row img {
     width: 90%;
-    /* Adjusts the image width for smaller screens */
   }
 }
 
@@ -691,7 +687,6 @@ a:active {
 
 .p-inner .tag span {
   font-weight: 600;
-  /* You can adjust the font weight if needed */
 }
 
 .filters-content {
@@ -700,9 +695,7 @@ a:active {
 
 .explore-more-container {
   text-align: right;
-  /* Align the button to the right */
   margin-top: 20px;
-  /* Add some spacing from the portfolio grid */
 }
 
 
@@ -720,7 +713,6 @@ a:active {
 
 .btn-explore-more:hover {
   background-color: #bac964;
-  /* Darker hover effect */
   color: black;
   font-weight: 800;
 }
@@ -1131,27 +1123,6 @@ a:active {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .block-47 .block-47-image {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 50px;
@@ -1195,3 +1166,19 @@ a:active {
   letter-spacing: .2rem;
   color: rgba(255, 255, 255, 0.5) !important;
 }
+
+
+/* Floating image to the left with margin */
+.img-float-left {
+  float: left;
+  margin: 0 30px 20px 0; /* Add spacing around the image */
+  width: 35%; /* Set width to control image size */
+}
+
+/* Clear floats for the parent element */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
