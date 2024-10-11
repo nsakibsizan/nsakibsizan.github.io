@@ -169,25 +169,30 @@
 	// Page Nav
 	var clickMenu = function() {
 
-		$('.navbar-nav a:not([class="external"])').click(function(event){
-
+		$('.navbar-nav a').click(function(event) {
 			var section = $(this).data('nav-section'),
 				navbar = $('.navbar-nav');
-				if (isMobile.any()) {
-					$('.navbar-toggle').click();
-				}
-				if ( $('[data-section="' + section + '"]').length ) {
-			    	$('html, body').animate({
-			        	scrollTop: $('[data-section="' + section + '"]').offset().top
-			    	}, 500, 'easeInOutExpo');
-			   }
-
-		    event.preventDefault();
-		    return false;
+	
+			// Only apply smooth scroll if the link has a data-nav-section attribute
+			if (section && $('[data-section="' + section + '"]').length) {
+				event.preventDefault(); // Prevent default only for internal sections
+				$('html, body').animate({
+					scrollTop: $('[data-section="' + section + '"]').offset().top
+				}, 500, 'easeInOutExpo');
+			} 
+			// Remove the preventDefault behavior for normal links
+			else {
+				return true; // Allow normal link behavior for external or page links
+			}
+	
+			// Close navbar on mobile
+			if (isMobile.any()) {
+				$('.navbar-toggle').click();
+			}
 		});
-
-
+	
 	};
+	
 
 	// Reflect scrolling in navigation
 	var navActive = function(section) {

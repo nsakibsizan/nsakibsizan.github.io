@@ -1,0 +1,19 @@
+
+/* About Me Start */
+
+.lead_about {
+    font-weight: 300;
+    line-height: 1.1;
+    color: #c2bebe;
+    font-size: 18px;
+}
+
+.img-float-left {
+    float: left;
+    margin: 0 30px 20px 0;
+    width: 35%;
+  }
+
+/* About Me End */
+
+
