@@ -7,26 +7,31 @@
 
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/research.css">
+	<link rel="stylesheet" href="css/project.css">
+	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="css/achievement.css">
+	<link rel="stylesheet" href="css/blog.css">
+	<link rel="stylesheet" href="css/contact.css">
+	<link rel="stylesheet" href="css/my_story.css">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 	<link
-		href="https://fonts.googleapis.com/css2?family=Aladin&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Aladin&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100..900;1,100..900&family=Baloo+2:wght@400..800&display=swap"
 		rel="stylesheet">
-
-
 </head>
 
 <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
 
 <!-- Navbar Start -->
-	<nav class="navbar navbar-expand-lg site-navbar navbar-dark" id="pb-navbar">
+	<nav class="navbar navbar-expand-lg site-navbar" id="pb-navbar">
 		<div class="container">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"
 				aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,12 +41,13 @@
 			<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
 				<ul class="navbar-nav">
 					<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
-					<li class="nav-item"><a class="nav-link" href="">Research & Project</a></li>
-					<li class="nav-item"><a class="nav-link" href="">Achievements</a></li>
-					<li class="nav-item"><a class="nav-link" href="">My Story</a></li>
-					<li class="nav-item"><a class="nav-link" href="">Blog</a></li>
-					<li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+					<li class="nav-item"><a class="nav-link active" href="about.html">About Me</a></li>
+					<li class="nav-item"><a class="nav-link" href="research.html">Research Work</a></li>
+					<li class="nav-item"><a class="nav-link" href="project.html">Project</a></li>
+					<li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>
+					<li class="nav-item"><a class="nav-link" href="my_story.html">My Story</a></li>
+					<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -50,33 +56,25 @@
 
 
 <!-- Slider Image Start -->
-	<section class="site-hero" style="background-image: url(images/sizan3.jpeg);" id="section-home"
+	<section class="innerPageBanner" style="background-image: url(images/AboutMeBanner.png);" id="section-home"
 		data-stellar-background-ratio="0.5">
-		<div class="container">
-			<div class="row intro-text align-items-center justify-content-center">
-				<div class="col-md-10 text-center pt-5">
-					<h1 class="site-heading site-animate" style="text-shadow: 8px 8px 8px rgba(0, 0, 0, 1);">
-						Hello, I'm <strong class="d-block" style="color: #bac964; font-size: 90px;">Najmus Sakib Sizan</strong>
-					</h1>
-					<strong class="d-block text-white text-uppercase letter-spacing">Software Support Engineer @ BJIT Limited</strong>
-				</div>
-			</div>
-		</div>
 	</section>
 <!-- Slider Image End -->
 
 
 <!-- About Me Start -->
-	<section class="site-section" id="section-about">
+	<section id="section-about">
 		<div class="container">
-			<div class="row mb-5 align-items-center">
+			<div class="row align-items-center">
 				<div class="col-lg-12">
 					<img src="images/sizan_new.jpg" alt="Image placeholder" class="img-fluid img-float-left darken-img" style="padding-top: 30px;">
 					<div class="section-heading">
-						<h2 style="text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);">About <strong style="color: #bac964;">Me</strong></h2>
+						<h2 class="styled-heading">
+							<strong>About Me</strong>
+						</h2>
 					</div>
-					<p class="lead text-justify">
-						I am Najmus Sakib Sizan, a Software Support Engineer at BJIT Limited with a strong passion for technology and problem-solving. Throughout my career, I have honed my technical expertise and developed a deep understanding of complex software environments, delivering efficient support and solutions.<br><br>
+					<p class="lead_about text-justify">
+						I am Najmus Sakib Sizan, a <b style="font-weight: 700;">Software Support Engineer at BJIT Limited</b> with a strong passion for technology and problem-solving. Throughout my career, I have honed my technical expertise and developed a deep understanding of complex software environments, delivering efficient support and solutions.<br><br>
 						Prior to my role at BJIT Limited, I served as a Software Support Engineer at Desh Universal (Pvt.) Ltd. and as Tech Coordinator for BuffaloGrid Ltd in Bangladesh. These experiences have allowed me to refine my skills in technical support and coordination, consistently driving impactful solutions in diverse and challenging settings.<br><br>
 						I hold an MSc in Computer Science and Engineering from Jagannath University, as well as a BSc in Computer Science and Engineering from Green University of Bangladesh, where I had the honor of serving as the President of the Green University Computer Club (GUCC).<br><br>
 						Beyond my professional and academic endeavors, I am actively involved in social initiatives. I have volunteered with Socchota, a non-profit organization focused on environmental sustainability. My commitment to community service aligns with my belief in using technology and innovation for the greater good.<br><br>
@@ -93,24 +91,35 @@
 <!-- About Me End -->
 
 
-<!-- About Me Summary Start -->
-	<section class="site-section pb-0" id="section-services" style="background-color: #333;">
-		<div class="container">
-			<div class="row">
-				<img src="images/about_summary.png" alt="Skills Image" class="centered-img">
+<!-- Skills Start -->
+<section class="pb-0" style="background-color: #333;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-heading">
+					<h2 class="styled-heading">
+						<strong>Skills</strong>
+					</h2>
+				</div>
 			</div>
 		</div>
-	</section>
-<!-- About Me Summary End -->
+		<div class="row">
+			<img src="images/skills.png" alt="Skills Image" class="centered-img">
+		</div>
+	</div>
+</section>
+<!-- Skills End -->
 
 
 <!-- Academic Journey Start  -->
-	<section class="site-section " id="section-resume" style="margin-top: 50px;">
+	<section id="section-resume" style="margin-top: 50px;">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 mb-5">
-					<div class="section-heading text-center">
-						<h2 style="text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);"><strong style="color: #bac964;">Academic Journey</strong></h2>
+				<div class="col-md-12">
+					<div class="section-heading">
+						<h2 class="styled-heading">
+							<strong>Academic Journey</strong>
+						</h2>
 					</div>
 				</div>
 				<div class="col-md-6">
@@ -146,7 +155,7 @@
 							alt="Mograpara H.G.G.S Smrity Government Biddayaton Logo">
 						<span class="date"><span class="fa fa-calendar-alt"></span> 2015</span>
 						<p class="edu_name">Secondary School Certificate (S.S.C.) <br> <span class="school">Mograpara
-								H.G.G.S Smrity Government Biddayaton, Sonargoan, Narayanganj</span></p>
+								H.G.G.S Smrity Government Biddayaton, Sonargoan</span></p>
 						<p class="edu_details">Group: <b>Science</b> <br> Board: <b>Dhaka</b> <br> GPA: <b>4.83 out of 5.00</b></p>					
 					</div>
 				</div>
@@ -160,9 +169,11 @@
 	<section class="site-section " id="section-resume" style="margin-top: 50px;">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 mb-5">
-					<div class="section-heading text-center">
-						<h2 style="text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);"><strong style="color: #bac964;">Professional Journey</strong></h2>
+				<div class="col-md-12">
+					<div class="section-heading">
+						<h2 class="styled-heading">
+							<strong>Professional Journey</strong>
+						</h2>
 					</div>
 				</div>
 				<div class="col-md-6">
@@ -207,16 +218,19 @@
 	<section class="site-section " id="section-resume" style="margin-top: 50px;">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 mb-5">
-					<div class="section-heading text-center">
-						<h2 style="text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);"><strong style="color: #bac964;">Research Experience</strong></h2>
+				<div class="col-md-12">
+					<div class="section-heading">
+						<h2 class="styled-heading">
+							<strong>Research Experience</strong>
+						</h2>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="resume-item mb-4">
-						<img class="edu_logo" src="images/jnu.png" alt="Jagannath University Logo">
+						<img class="edu_logo_itrrc1" src="images/jnu.png" alt="Jagannath University Logo">
+						<img class="edu_logo_itrrc2" src="images/itrrc.png" alt="Jagannath University Logo">
 						<span class="date"><span class="fa fa-calendar-alt"></span> January 2023 - Present</span>
-						<p class="edu_name">Graduate Research Fellow <br> <span class="school">ITRRC Cybersecurity Research Lab</span></p>
+						<p class="edu_name">Graduate Research Fellow <br> <span class="school">JnU ITRRC Cybersecurity Research Lab</span></p>
 						<p class="edu_details">Area of Work: <b>Blockchain, Machine Learning, Internet of Things (IoT)</b> <br> Supervisor: <b>Prof. Dr. Md. Abu Layek, Professor, CSE</b> <br> Publication: <b>Conference (01), In Submission (02)</b></p>
 					</div>
 				</div>
@@ -240,14 +254,16 @@
 	<section class="site-section " id="section-resume" style="margin-top: 50px;">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 mb-5">
-					<div class="section-heading text-center">
-						<h2 style="text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);"><strong style="color: #bac964;">Leadership Experience</strong></h2>
+				<div class="col-md-12">
+					<div class="section-heading">
+						<h2 class="styled-heading">
+							<strong>Leadership Experience</strong>
+						</h2>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="resume-item mb-4">
-						<img class="edu_logo" src="images/cse.png" alt="Jagannath University Logo">
+						<img class="edu_logo" src="images/cse.png" alt="GUB Logo">
 						<span class="date"><span class="fa fa-calendar-alt"></span> October 2020 - January 2022</span>
 						<p class="edu_name">Student Mentor <br> <span class="school">Dept. of Computer Science and Engineering</span></p>
 						<p class="edu_details">Program: <b>Green University Student Mentorship Program</b> <br> Mentored: <b>500+ Students</b></p>
@@ -256,12 +272,38 @@
 
 				<div class="col-md-6">
 					<div class="resume-item mb-4">
-						<img class="exp_logo" src="images/gucc.png" alt="Green University of Bangladesh Logo">
-						<span class="date"><span class="fa fa-calendar-alt"></span> January 2021 - February 2022</span>
+						<img class="exp_logo" src="images/gucc.png" alt="GUCC Logo">
+						<span class="date"><span class="fa fa-calendar-alt"></span> October 2020 - February 2022</span>
 						<p class="edu_name">President <br> <span class="school">Green University Computer Club (GUCC)</span></p>
 						<p class="edu_details">Organized: <b>15+ Events</b> <br>Motto: <b> Be Developer, Be Leader</b></p>
 					</div>
 				</div>
+				<div class="col-md-6">
+					<div class="resume-item mb-4">
+						<img class="edu_logo" src="images/gucc.png" alt="GUCC Logo">
+						<span class="date"><span class="fa fa-calendar-alt"></span> March 2019 - October 2020</span>
+						<p class="edu_name">Joint Information Secretary <br> <span class="school">Green University Computer Club (GUCC)</span></p>
+						<!-- <p class="edu_details">Organized: <b>10+ Events</b> <br>Motto: <b> Be Developer, Be Leader</b></p> -->
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-item mb-4">
+						<img class="exp_logo" src="images/basis.jpg" alt="BASIS Logo">
+						<span class="date"><span class="fa fa-calendar-alt"></span> October 2019 - December 2020</span>
+						<p class="edu_name">Executive Member <br> <span class="school">BASIS Student Forum</span></p>
+						<!-- <p class="edu_details">Organized: <b>15+ Events</b> <br>Motto: <b> Be Developer, Be Leader</b></p> -->
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="resume-item mb-4">
+						<img class="edu_logo" src="images/YES.jpeg" alt="YES Logo">
+						<span class="date"><span class="fa fa-calendar-alt"></span> June 2018 - June 2019</span>
+						<p class="edu_name">Executive Member <br> <span class="school">YES Student Branch</span></p>
+						<!-- <p class="edu_details">Organized: <b>10+ Events</b> <br>Motto: <b> Be Developer, Be Leader</b></p> -->
+					</div>
+				</div>
+				<div class="col-md-6"></div>
 			</div>
 		</div>
 	</section>
@@ -275,30 +317,30 @@
 				<div class="col-md-4">
 					<iframe
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.838762542465!2d90.40419527511405!3d23.71745127869285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8fe529b5d1d%3A0x1e8d7c9ab2ac22d9!2sBangshal%20Rd%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1727858443825!5m2!1sen!2sbd"
-						width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 				</div>
 
-				<div class="col-md-4">
-					<p class="" style="font-size: 25px; font-weight: 600; color: aliceblue;">Contact Details</p>
+				<div class="col-md-4 contact-details">
+					<p class="contact-title">Contact Details</p>
 					<ul class="site-contact-details">
 						<li>
-							<span class="text-uppercase">Email</span>
-							nsakibsizan115@gmail.com
-						</li>
-						<li>
-							<span class="text-uppercase">Address</span>
-							Dhaka, Bangladesh
+							<span class="detail-title">Email</span> <br>
+							<a href="mailto:nsakibsizan115@gmail.com">nsakibsizan115@gmail.com</a>
 						</li>
 					</ul>
 				</div>
-			
-				<div class="col-md-4">
-					<p class="" style="font-size: 25px; font-weight: 600; color: aliceblue;">Social Handles</p>
+				
+				<div class="col-md-4 contact-details">
+					<p class="contact-title">Social Handles</p>
 					<p>
 						<a href="https://www.linkedin.com/in/najmus-sakib-sizan/" target="_blank" class="social-item"><span class="fa-brands fa-linkedin"></span></a>
 						<a href="https://github.com/NSakibSizan" target="_blank" class="social-item"><span class="fa-brands fa-github"></span></a>
 						<a href="https://www.researchgate.net/profile/Najmus-Sizan" target="_blank" class="social-item"><span class="fa-brands fa-researchgate"></span></a>
 						<a href="https://www.facebook.com/najmussakibsizan/" target="_blank" class="social-item"><span class="fa-brands fa-facebook"></span></a>
+						<a href="https://www.facebook.com/najmussakibsizan/" target="_blank" class="social-item"><span class="fa-brands fa-instagram"></span></a>
+						<a href="https://scholar.google.com/citations?user=F2WbGhUAAAAJ&hl=en" target="_blank" class="social-item"><span class="fa-brands fa-google-scholar"></span></a>
+						<a href="https://orcid.org/0000-0002-7928-440X" target="_blank" class="social-item"><span class="fa-brands fa-orcid"></span></a>
+
 					</p>
 				</div>
 			</div>
@@ -310,7 +352,6 @@
 			</div>
 	</section>
 <!-- Footer End  -->
-
 
 
 	<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
