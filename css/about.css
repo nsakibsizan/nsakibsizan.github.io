@@ -82,12 +82,7 @@ position: absolute;
 bottom: 100%;
 right: 0;      
 z-index: 1;
-}
-
-.card__arc path {
-fill: var(--surface-color);
-d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
-}       
+}  
 
 .card:hover .card__header {
 transform: translateY(0);
@@ -109,7 +104,7 @@ font-weight: 700;
 
 
 .card__status {
-font-size: 16px;
+font-size: 14px;
 color: #f5e2eb;
 }
 
