@@ -17,7 +17,11 @@ body {
   background: #222;
   margin: 0;
   padding: 0;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility !important;
+  user-select: none !important;        /* For modern browsers */
+  -webkit-user-select: none !important; /* For Chrome, Safari */
+  -moz-user-select: none !important;    /* For Firefox */
+  -ms-user-select: none !important;     /* For IE and Edge */
 }
 
 h1,
@@ -42,6 +46,15 @@ a:active {
   color: #b2c251;
   text-decoration: none;
 }
+
+img {
+    -webkit-user-drag: none !important; /* For Chrome, Safari, and Opera */
+    -khtml-user-drag: none !important;  /* For Konqueror */
+    -moz-user-drag: none !important;    /* For Firefox */
+    -o-user-drag: none !important;      /* For Opera */
+    user-drag: none !important;         /* Non-prefixed support */
+}
+
 
 .row {
   display: flex;
