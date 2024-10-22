@@ -361,10 +361,30 @@
     <!-- Footer End  -->
 
 	<script>
-		document.addEventListener("contextmenu", function (e) {
-			e.preventDefault();
-		});
-	</script>
+	        // Prevent right-click (context menu)
+	        document.addEventListener("contextmenu", function (e) {
+	            e.preventDefault();
+	        });
+	
+	        // Prevent drag and drop
+	        document.addEventListener("dragstart", function (e) {
+	            e.preventDefault();
+	        });
+	
+	        document.addEventListener("drop", function (e) {
+	            e.preventDefault();
+	        });
+	
+	        // Prevent text selection
+	        document.addEventListener('selectstart', function (e) {
+	            e.preventDefault();
+	        });
+	
+	        // Prevent double-click interaction
+	        document.addEventListener('dblclick', function (e) {
+	            e.preventDefault();
+	        });
+    </script>
     <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
