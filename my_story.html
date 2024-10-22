@@ -371,7 +371,11 @@
 	</section>
 	<!-- Footer End  -->
 
-
+	<script>
+		document.addEventListener("contextmenu", function (e) {
+			e.preventDefault();
+		});
+	</script>
 	<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 	<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
