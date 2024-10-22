@@ -524,14 +524,33 @@
 	</section>
 	<!-- Footer End  -->
 
-
+	<script>
+	        // Prevent right-click (context menu)
+	        document.addEventListener("contextmenu", function (e) {
+	            e.preventDefault();
+	        });
+	
+	        // Prevent drag and drop
+	        document.addEventListener("dragstart", function (e) {
+	            e.preventDefault();
+	        });
+	
+	        document.addEventListener("drop", function (e) {
+	            e.preventDefault();
+	        });
+	
+	        // Prevent text selection
+	        document.addEventListener('selectstart', function (e) {
+	            e.preventDefault();
+	        });
+	
+	        // Prevent double-click interaction
+	        document.addEventListener('dblclick', function (e) {
+	            e.preventDefault();
+	        });
+    	</script>
 	<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 	<script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
-	<script>
-		document.addEventListener("contextmenu", function (e) {
-			e.preventDefault();
-		});
-	</script>
 	<script src="js/vendor/jquery.min.js"></script>
 	<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/vendor/popper.min.js"></script>
