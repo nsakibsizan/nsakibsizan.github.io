@@ -527,7 +527,11 @@
 
 	<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 	<script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
-
+	<script>
+		document.addEventListener("contextmenu", function (e) {
+			e.preventDefault();
+		});
+	</script>
 	<script src="js/vendor/jquery.min.js"></script>
 	<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/vendor/popper.min.js"></script>
