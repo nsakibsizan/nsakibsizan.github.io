@@ -52,7 +52,7 @@ img {
     -khtml-user-drag: none !important;  /* For Konqueror */
     -moz-user-drag: none !important;    /* For Firefox */
     -o-user-drag: none !important;      /* For Opera */
-    user-drag: none !important;         /* Non-prefixed support */
+    -webkit-user-drag: none !important; /* Non-prefixed support */
 }
 
 
@@ -220,7 +220,7 @@ img {
 
 .site-hero h1,
 .site-hero .lead {
-  font-weight: 300;
+  /* font-weight: 300; */
   color: #fff;
 }
 
@@ -283,7 +283,7 @@ img {
 }
 
 .lead {
-  font-weight: 200;
+  /* font-weight: 200; */
   line-height: 1.6;
   font-size: 18px;
 }
