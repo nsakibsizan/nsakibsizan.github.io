@@ -37,6 +37,13 @@
 </head>
 
 <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+
+	<!-- Placeholder Start -->
+	<div class="preloader">
+        <img src="images/logo/logo.png" alt="Logo">
+    </div>
+	<!-- Placeholder End -->
+
 	<!-- Navbar Start -->
 	<nav class="navbar navbar-expand-lg site-navbar" id="pb-navbar">
 		<div class="container">
@@ -117,7 +124,7 @@
 	 
 
 	<!-- Learning and Growth Start -->
-	<section style="margin-top: 50px;">
+	<section style="margin-block-start: 50px;">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 mb-5">
@@ -198,7 +205,7 @@
 
 
 	<!-- Featured Work Start -->
-	<!-- <section style="background-color: #333; padding-top: 40px;">
+	<!-- <section style="background-color: #333; padding-block-start: 40px;">
 		<div class="container">
 			<div class="row">
 				<div class="section-heading">
@@ -261,7 +268,7 @@
 
 
 	<!-- Words from Others Start 
-	<section style="padding-top: 40px;">
+	<section style="padding-block-start: 40px;">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -380,7 +387,7 @@
 
 	<!-- Footer Start  -->
 	<section class="site-section" id="section-contact"
-		style="background-color: #333; padding-top: 40px; text-align: center;">
+		style="background-color: #333; padding-block-start: 40px; text-align: center;">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
@@ -430,6 +437,53 @@
 	</section>
 	<!-- Footer End  -->
 
+	<!-- Back to Top Arrow Start -->
+	<a href="#" class="back-to-top" id="backToTop">↑</a>
+	<!-- Back to Top Arrow End -->
+
+
+	<script>
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                const preloader = document.querySelector('.preloader');
+                preloader.style.opacity = '0';
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                    document.body.style.backgroundColor = '#000000';
+                }, 1000);
+            }, 3000);
+        });
+
+        const backToTopButton = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        backToTopButton.addEventListener('click', (e) => {
+			e.preventDefault();
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth'
+			});
+		});
+    </script>
+
+	<script>
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                const preloader = document.querySelector('.preloader');
+                preloader.style.opacity = '0';
+                setTimeout(() => {
+                    preloader.style.display = 'none'; 
+                }, 1000); 
+            }, 8000); 
+        });
+    </script>
 
 	<script>
 	        // Prevent right-click (context menu)
@@ -467,8 +521,6 @@
 	<script
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 	<script src="js/google-map.js"></script>
-
-
 
 </body>
 

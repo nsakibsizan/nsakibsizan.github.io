@@ -17,7 +17,10 @@ body {
   background: #222;
   margin: 0;
   padding: 0;
+  position: relative;
+  block-size: 100vh;
   text-rendering: optimizeLegibility !important;
+  transition: background-color 1s ease;
   user-select: none !important;        /* For modern browsers */
   -webkit-user-select: none !important; /* For Chrome, Safari */
   -moz-user-select: none !important;    /* For Firefox */
@@ -75,8 +78,8 @@ img {
 /* Navbar CSS Start */
 .navbar {
   position: sticky;
-  top: 0;
-  width: 100%;
+  inset-block-start: 0;
+  inline-size: 100%;
   padding: 1em 0;
   z-index: 1000;
   color: #f0f0f0;
@@ -111,10 +114,10 @@ img {
 .nav-link::before {
   content: '';
   position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -5px;
-  left: 50%;
+  inline-size: 0;
+  block-size: 2px;
+  inset-block-end: -5px;
+  inset-inline-start: 50%;
   background-color: #bac964;
   transition: width 0.3s ease, left 0.3s ease;
 }
@@ -125,13 +128,13 @@ img {
 }
 
 .nav-link:hover::before {
-  width: 100%;
-  left: 0;
+  inline-size: 100%;
+  inset-inline-start: 0;
 }
 
 .navbar-nav .nav-item .nav-link.active {
   color: #bac964; 
-  border-bottom: 2px solid #bac964;
+  border-block-end: 2px solid #bac964;
 }
 
 .navbar-toggler {
@@ -146,7 +149,7 @@ img {
 .site-navbar {
   box-shadow: none;
   border-radius: 0;
-  margin-bottom: 0;
+  margin-block-end: 0;
   z-index: 200;
 }
 
@@ -159,7 +162,7 @@ img {
 @media (max-width: 767.98px) {
   .navbar-toggler {
     position: absolute;
-    right: 15px;
+    inset-inline-end: 15px;
   }
 }
 
@@ -187,24 +190,24 @@ img {
 
 .site-hero,
 .site-hero .row {
-  height: 100vh;
-  min-height: 800px;
+  block-size: 100vh;
+  min-block-size: 800px;
 }
 
 .site-hero:before {
   content: "";
   position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inline-size: 100%;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  inset-block-end: 0;
   background: rgba(0, 0, 0, 0.5);
 }
 
 .site-hero h1 {
   font-weight: 200;
-  margin-bottom: 20px;
+  margin-block-end: 20px;
   display: block;
 }
 
@@ -229,7 +232,7 @@ img {
 }
 
 .site-hero .site-subheading {
-  max-width: 640px;
+  max-inline-size: 640px;
   margin: 0 auto;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -243,7 +246,7 @@ img {
   position: relative;
   z-index: 10;
   text-align: center;
-  margin-bottom: 10px;
+  margin-block-end: 10px;
 }
 
 
@@ -293,8 +296,8 @@ img {
 }
 
 .img-fluid_index_aboutme {
-  max-width: 100%;
-  height: 500px !important; 
+  max-inline-size: 100%;
+  block-size: 500px !important; 
 }
 
 
@@ -371,22 +374,22 @@ img {
 /* Skills Start */
 
 .centered-img {
-  max-width: 100%;
-  height: auto;
-  width: 900px;
-  max-height: 500px;
+  max-inline-size: 100%;
+  block-size: auto;
+  inline-size: 900px;
+  max-block-size: 500px;
 }
 
 .row img {
-  max-width: 100%;
-  height: auto;
+  max-inline-size: 100%;
+  block-size: auto;
   object-fit: contain;
   display: block;
 }
 
 @media (max-width: 768px) {
   .row img {
-    width: 90%;
+    inline-size: 90%;
   }
 }
 
@@ -414,7 +417,7 @@ img {
 
 .resume-item .date {
   display: block;
-  margin-bottom: 10px;
+  margin-block-end: 10px;
   font-size: 14px;
   font-weight: 700;
   color: #b6b3b3;
@@ -443,59 +446,59 @@ img {
 }
 
 .resume-item *:last-child {
-  margin-bottom: 0;
+  margin-block-end: 0;
 }
 
 .edu_logo {
   position: absolute;
-  left: -80px;
-  top: 50%;
+  inset-inline-start: -80px;
+  inset-block-start: 50%;
   transform: translateY(-50%);
-  width: 50px;
-  height: auto;
+  inline-size: 50px;
+  block-size: auto;
   border-radius: 50%;
   border: 2px solid #bac964;
   background-color: white;
   padding: 5px;
-  width: 80px;
+  inline-size: 80px;
 }
 
 .edu_logo_itrrc1 {
   position: absolute;
-  left: -80px;
-  top: 25%;
+  inset-inline-start: -80px;
+  inset-block-start: 25%;
   transform: translateY(-50%);
-  width: 50px;
-  height: auto;
+  inline-size: 50px;
+  block-size: auto;
   border-radius: 50%;
   border: 2px solid #bac964;
   background-color: white;
   padding: 5px;
-  width: 80px;
+  inline-size: 80px;
 }
 
 .edu_logo_itrrc2 {
   position: absolute;
-  left: -80px;
-  top: 25%;
+  inset-inline-start: -80px;
+  inset-block-start: 25%;
   transform: translateY(-50%);
-  width: 50px;
-  height: auto;
+  inline-size: 50px;
+  block-size: auto;
   border-radius: 50%;
   border: 2px solid #bac964;
   background-color: white;
   padding: 5px;
-  width: 80px;
-  margin-top: 100px;
+  inline-size: 80px;
+  margin-block-start: 100px;
 }
 
 .exp_logo {
   position: absolute;
-  right: -80px;
-  top: 50%;
+  inset-inline-end: -80px;
+  inset-block-start: 50%;
   transform: translateY(-50%);
-  width: 80px;
-  height: auto;
+  inline-size: 80px;
+  block-size: auto;
   border-radius: 50%;
   border: 2px solid #bac964;
   background-color: white;
@@ -517,7 +520,7 @@ img {
 }
 
 .single-portfolio .relative {
-  margin-bottom: 20px;
+  margin-block-end: 20px;
 }
 
 .single-portfolio .p-inner {
@@ -556,7 +559,7 @@ img {
 }
 
 .p-inner .tag {
-  margin-bottom: 10px;
+  margin-block-end: 10px;
   display: inline-block;
   background-color: #bac964;
   padding: 5px 10px;
@@ -571,8 +574,8 @@ img {
 }
 
 .explore-more-container {
-  text-align: right;
-  margin-top: 20px;
+  text-align: end;
+  margin-block-start: 20px;
 }
 
 .btn-explore-more {
@@ -596,8 +599,8 @@ img {
 .image {
   opacity: 1;
   display: block;
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
   -webkit-transition: .5s ease;
   -o-transition: .5s ease;
   transition: .5s ease;
@@ -624,7 +627,7 @@ img {
 }
 
 .block-47 .block-47-quote {
-  margin-left: 40px;
+  margin-inline-start: 40px;
   padding: 30px;
   background: #333;
   border-radius: 7px;
@@ -638,7 +641,7 @@ img {
   border: 1px solid red;
   z-index: 2;
   position: absolute;
-  left: -15px;
+  inset-inline-start: -15px;
   border-width: 0 20px 20px 0;
   border-style: solid;
   border-color: transparent #333 transparent transparent;
@@ -660,7 +663,7 @@ img {
   -o-transition: .3s all ease;
   transition: .3s all ease;
   position: relative;
-  top: 0;
+  inset-block-start: 0;
   -webkit-box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1);
   background: #333;
@@ -671,11 +674,11 @@ img {
 .blog-entry:focus {
   -webkit-box-shadow: 0 5px 50px -10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 5px 50px -10px rgba(0, 0, 0, 0.1);
-  top: -2px;
+  inset-block-start: -2px;
 }
 
 .blog-entry .blog-entry-text {
-  border-top: none;
+  border-block-start: none;
   padding: 30px;
 }
 
@@ -686,7 +689,7 @@ img {
 
 .blog-entry .blog-entry-text .blog_title {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-block-end: 10px;
 }
 
 .blog-entry .blog-entry-text .blog_title a {
@@ -703,7 +706,7 @@ img {
 
 .blog-entry .meta a {
   display: inline-block;
-  margin-right: 10px;
+  margin-inline-end: 10px;
   color: rgba(255, 255, 255, 0.4);
 }
 
@@ -716,36 +719,37 @@ img {
 /* ------------------------------------------------------- */
 
 /* Footer Start */
-
 .social-item {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  inline-size: 50px;
+  block-size: 50px;
   background: #424040;
   position: relative;
   border-radius: 50%;
   font-size: 22px;
   margin: 0 10px;
+  color: #e8e0e0; 
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
-.social-item>span {
+.social-item > span {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-
-.social-item {
-  display: inline-block;
-  color: #e8e0e0;
-  font-size: 24px;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .social-item:hover {
+  background: #bac964; 
   transform: scale(1.2);
+}
+
+.social-item:hover > span {
+  color: #ffffff;
+  font-size: 25px;
 }
 
 .contact-details {
@@ -759,11 +763,11 @@ img {
 
 .site-contact-details {
   list-style-type: none;
-  padding-left: 0;
+  padding-inline-start: 0;
 }
 
 .site-contact-details li {
-  margin-bottom: 15px;
+  margin-block-end: 15px;
   font-size: 18px;
   line-height: 1.5;
   color: #d3d3d3;
@@ -782,7 +786,7 @@ img {
 }
 
 .contact-details .site-contact-details a:hover {
-  color: #88c057;
+  color: #bac964;
 }
 
 @media (max-width: 768px) {
@@ -798,6 +802,7 @@ img {
       font-size: 16px;
   }
 }
+
 /* Footer End */
 
 
@@ -806,13 +811,88 @@ img {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
-  width: 100%; 
+  block-size: 500px;
+  inline-size: 100%; 
 }
 
 @media (min-width: 1024px) {
   .innerPageBanner {
-      height: 500px; 
+      block-size: 500px; 
   }
 }
 /* Inner Page Banner End */
+
+
+/* Preloader styles Start */
+.preloader {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  transform: translate(-50%, -50%);
+  inline-size: 120px;
+  block-size: 120px;
+  background-color: #bac964;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.preloader img {
+  inline-size: 80%;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-20px);
+  }
+  60% {
+      transform: translateY(-10px);
+  }
+}
+/* Preloader styles End */
+
+
+/* Back to Top Arrow Start */
+.back-to-top {
+  position: fixed;
+  inset-block-end: 20px;
+  inset-inline-end: 20px;
+  inline-size: 50px;
+  block-size: 50px;
+  background-color: #bac964;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-size: 24px;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s; 
+}
+
+.back-to-top.show {
+  opacity: 1;
+  color: #000;
+}
+
+.back-to-top:hover {
+  transform: scale(1.1);
+  color: #000;
+  text-decoration:hwb(from color h w b);
+  font-size: 30px;
+}
+
+.back-to-top:active {
+  transform: scale(0.95);
+}
+/* Back to Top Arrow End */
