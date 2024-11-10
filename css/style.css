@@ -716,38 +716,78 @@ img {
 /* ------------------------------------------------------- */
 
 /* Footer Start */
-.social-item {
-  display: inline-block;
-  inline-size: 50px;
-  block-size: 50px;
-  background: #424040;
-  position: relative;
-  border-radius: 50%;
-  font-size: 22px;
-  margin: 0 10px;
-  color: #e8e0e0; 
-  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+.contact-details {
+  text-align: center;
 }
 
-.social-item > span {
-  position: absolute;
-  inset-block-start: 50%;
-  inset-inline-start: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  transition: color 0.3s ease;
+.contact-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fcf4f4;
 }
 
-.social-item:hover {
-  background: #bac964; 
-  transform: scale(1.2);
+.contact-details p {
+  display: flex;
+  justify-content: center;
+  gap: 8px; 
+  flex-wrap: wrap; 
 }
 
-.social-item:hover > span {
-  color: #ffffff;
-  font-size: 25px;
+.contact-details .social-item {
+  display: inline-flex;
+  font-size: 1.5rem;
+  color: #000; 
+  background-color: #fff; 
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
+
+.contact-details .social-item:hover {
+  transform: scale(1.2); 
+}
+
+.contact-details .social-item[href*="linkedin.com"]:hover {
+  color: #0077b5; 
+}
+
+.contact-details .social-item[href*="github.com"]:hover {
+  color: #333; 
+}
+
+.contact-details .social-item[href*="researchgate.net"]:hover {
+  color: #00ccbb; 
+}
+
+.contact-details .social-item[href*="facebook.com"]:hover {
+  color: #3b5998; 
+}
+
+.contact-details .social-item[href*="instagram.com"]:hover {
+  color: #e4405f;  
+  /* FCAF45 */
+}
+
+.contact-details .social-item[href*="scholar.google.com"]:hover {
+  color: #4285f4; 
+}
+
+.contact-details .social-item[href*="orcid.org"]:hover {
+  color: #a6ce39; 
+}
+
+.contact-details .social-item .fa-brands {
+  font-size: inherit;
+}
+
+
+
+
+
 
 .contact-details {
   color: aliceblue;
