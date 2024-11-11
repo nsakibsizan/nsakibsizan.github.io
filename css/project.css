@@ -261,7 +261,7 @@ a:hover {
     padding: 2.5px 10px;
     margin: 0 5px 5px 0;
     cursor: default;
-    user-select: none;
+    /* user-select: none; */
     transition: background-color 0.3s;
 }
 

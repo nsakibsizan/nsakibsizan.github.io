@@ -18,10 +18,10 @@ body {
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility !important;
-  user-select: none !important;        /* For modern browsers */
-  -webkit-user-select: none !important; /* For Chrome, Safari */
-  -moz-user-select: none !important;    /* For Firefox */
-  -ms-user-select: none !important;     /* For IE and Edge */
+  /* user-select: none !important;        
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;   
+  -ms-user-select: none !important;     */
 }
 
 h1,
@@ -96,9 +96,9 @@ img {
 
 .nav-link {
   color: #f0f0f0;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
-  letter-spacing: 1.2px;
+  letter-spacing: 1px;
   transition: color 0.3s ease, transform 0.3s ease;
   font-weight: 600;
   position: relative;
@@ -150,7 +150,21 @@ img {
   z-index: 200;
 }
 
+@media (max-width: 1200px) {
+  .nav-link {
+    font-size: 15px; /* Slightly smaller font */
+    letter-spacing: 1px;
+  }
+  .navbar-nav .nav-item {
+    margin: 0 4px; /* Reduce spacing between items */
+  }
+}
+
+
 @media (max-width: 991.98px) {
+  .navbar {
+    padding-inline: 1rem; /* Reduce padding inside the navbar */
+  }
   .site-navbar .navbar-nav>li>a {
     color: #bac964 !important;
   }
