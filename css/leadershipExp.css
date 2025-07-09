@@ -1,0 +1,145 @@
+.leadership-experience {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  color: #fff;
+  position: relative;
+}
+
+.section-header-leadership {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title-leadership {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.section-title-leadership .highlight-leadership {
+  color: #f27121;
+}
+
+.section-subtitle-leadership {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 700px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+
+
+
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leadership-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  padding: 30px 20px 20px 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+}
+
+.leadership-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(255, 102, 0, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.glow-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(180deg, #f27121, #ff6f00);
+  border-radius: 5px;
+}
+
+.org-logo-frame {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(242, 113, 33, 0.5);
+  animation: pulseLogo 3s infinite;
+}
+
+.org-logo-frame img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  align-items: center;
+}
+
+@keyframes pulseLogo {
+  0%, 100% { box-shadow: 0 0 15px rgba(242, 113, 33, 0.3); }
+  50% { box-shadow: 0 0 25px rgba(242, 113, 33, 0.6); }
+}
+
+.position-title_leader {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #f27121;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.organization-name {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.position-date {
+  font-size: 0.9rem;
+  color: #f27121;
+  font-weight: 600;
+  text-align: center;
+}
+
+.special {
+  border: 1px solid rgba(255, 166, 0, 0.6);
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 0 40px rgba(255, 166, 0, 0.4);
+}
+
+.animated-card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInCard 0.6s ease forwards;
+}
+
+.animated-card:nth-child(1) { animation-delay: 0s; }
+.animated-card:nth-child(2) { animation-delay: 0.2s; }
+.animated-card:nth-child(3) { animation-delay: 0.4s; }
+.animated-card:nth-child(4) { animation-delay: 0.6s; }
+.animated-card:nth-child(5) { animation-delay: 0.8s; }
+
+@keyframes fadeInCard {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

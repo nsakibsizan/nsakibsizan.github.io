@@ -125,35 +125,29 @@
 }
 
 .pub-title {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 15px;
   background: linear-gradient(90deg, #4ecdc4, #4e8bcd);
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
-  display: inline-block;
-  text-transform: uppercase;
   letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
 }
 
+.pub-title-main{
+  position: relative;
+  padding: 0 10px;
+}
 .pub-subtitle {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.2rem;
   max-width: 600px;
   margin: 0 auto;
   position: relative;
-}
-
-.pub-subtitle::after {
-  content: '';
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 3px;
-  background: linear-gradient(90deg, #4ecdc4, #4e8bcd);
 }
 
 .pub-grid {
@@ -350,10 +344,6 @@
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
-}
-
-.pub-card:hover .pub-highlight-bar {
-  transform: scaleX(1);
 }
 
 @media (max-width: 1024px) {

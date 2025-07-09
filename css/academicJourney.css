@@ -1,0 +1,88 @@
+.academic-journey-new {
+  padding: 100px 0;
+  background: radial-gradient(circle at top left, #10131a, #0a0e17);
+  color: #e0e0e0;
+}
+
+.section-header_Academic {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title_Academic {
+  font-size: 3rem;
+  font-weight: 800;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.highlight_Academic {
+  color: #00c6ff;
+}
+
+.academic-timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.academic-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,198,255,0.1);
+  transition: all 0.4s ease;
+  text-align: center;
+}
+
+.academic-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 0 30px rgba(0,198,255,0.3);
+}
+
+.logo-wrapper {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,198,255,0.4);
+}
+
+.logo-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.academic-card h3 {
+  font-size: 1.3rem;
+  color: #00c6ff;
+  margin-bottom: 10px;
+}
+
+.academic-card .university {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.academic-card .info {
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  color: #c0dfff;
+}
+
+@media screen and (max-width: 768px) {
+  .section-title_Academic {
+    font-size: 2.2rem;
+  }
+}
