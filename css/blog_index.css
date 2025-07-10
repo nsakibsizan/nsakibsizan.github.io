@@ -17,21 +17,6 @@
   display: inline-block;
 }
 
-/* .title-gradient {
-  background: linear-gradient(90deg, #2b5876 0%, #4e4376 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-} */
-
-/* .title-decoration {
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(90deg, #2b5876 0%, #4e4376 100%);
-  margin: 15px auto;
-  border-radius: 2px;
-} */
-
 .section-subtitle {
   font-size: 1.1rem;
   color: #6c757d;

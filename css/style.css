@@ -124,6 +124,8 @@ img {
   color: #00c6ff;
   text-transform: uppercase;
   margin-right: 1rem;
+font-family: "Potta One", system-ui;
+
 }
 
 .brand-glow:hover {
@@ -131,7 +133,6 @@ img {
   text-shadow: 0 0 8px #00c6ff;
 }
 
-/* Nav Links */
 .navbar-nav .nav-link {
   color: #e0e0e0;
   font-weight: 500;

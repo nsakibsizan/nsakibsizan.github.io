@@ -11,6 +11,40 @@
   --transition: cubic-bezier(.1, .7, 0, 1);
 }
 
+.custom-hr {
+  border: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #bac964,
+    transparent
+  );
+  width: 80%;
+  margin: 40px auto;
+  opacity: 0.6;
+  border-radius: 2px;
+  animation: glowHr 3s ease-in-out infinite alternate;
+}
+
+@keyframes glowHr {
+  from {
+    box-shadow: 0 0 5px #bac964;
+  }
+  to {
+    box-shadow: 0 0 20px #bac964;
+  }
+}
+
+
+.section-heading{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.styled-heading{
+  font-size: 2.1rem;
+}
 
 .wrapper{
   display: flex;

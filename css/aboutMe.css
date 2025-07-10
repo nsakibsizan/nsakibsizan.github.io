@@ -195,9 +195,9 @@
 }
 
 .card-content_About {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 1);
 }
 
 .card-content_About b {
@@ -213,7 +213,7 @@
 }
 
 .interests-title_About {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #00c6ff;
   margin-bottom: 15px;
   font-weight: 600;
