@@ -1,4 +1,7 @@
 /* Common CSS Start */
+html {
+  scroll-behavior: smooth;
+}
 
 ::selection {
   background: #000;
@@ -12,7 +15,7 @@
 
 body {
   background-color: #1e1e2f !important;
-  color: #e0e0e0  !important;
+  color: #e0e0e0 !important;
   font-family: "Baloo 2", cursive !important;
   background: #222;
   margin: 0;
@@ -34,6 +37,7 @@ a {
   -o-transition: .3s all;
   transition: .3s all;
   color: #00c6ff;
+  text-decoration: none;
 }
 
 a:hover,
@@ -66,11 +70,10 @@ img {
 .shine {
   height: 10px;
   width: 80%;
-  background-image: radial-gradient(
-    farthest-side at 50% -50%,
-    hsla(57, 84%, 39%, 0.5),
-    hsla(0, 89%, 51%, 0));
-  position: relative; 
+  background-image: radial-gradient(farthest-side at 50% -50%,
+      hsla(57, 84%, 39%, 0.5),
+      hsla(0, 89%, 51%, 0));
+  position: relative;
 }
 
 .shine::before {
@@ -78,11 +81,10 @@ img {
   position: absolute;
   left: 0;
   right: 0;
-  background-image: linear-gradient(
-    90deg,
-    hsla(0, 8%, 76%, 0),
-    hsla(0, 7%, 89%, 0.75) 50%,
-    hsla(0, 0%, 0%, 0));
+  background-image: linear-gradient(90deg,
+      hsla(0, 8%, 76%, 0),
+      hsla(0, 7%, 89%, 0.75) 50%,
+      hsla(0, 0%, 0%, 0));
 }
 
 /* Inner Page Banner Start */
@@ -99,6 +101,7 @@ img {
     block-size: 500px;
   }
 }
+
 /* Inner Page Banner End */
 
 /* Navbar CSS Start */
@@ -112,7 +115,7 @@ img {
 
 /* Glassy + Shadowed */
 .glassy-nav {
-  background-color: #1a1a1a; 
+  background-color: #1a1a1a;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   box-shadow: 0 2px 10px rgba(0, 198, 255, 0.05);
   padding: 1rem 0;
@@ -124,7 +127,7 @@ img {
   color: #00c6ff;
   text-transform: uppercase;
   margin-right: 1rem;
-font-family: "Potta One", system-ui;
+  font-family: "Potta One", system-ui;
 
 }
 
@@ -194,6 +197,7 @@ font-family: "Potta One", system-ui;
     font-size: 1rem;
   }
 }
+
 /* Navbar CSS End */
 /* Common CSS End */
 
@@ -526,6 +530,7 @@ font-family: "Potta One", system-ui;
     bottom: 20px;
   }
 }
+
 /* Hero Section End */
 
 /* -------------------------------------------------------------------------------------------------------------- */
@@ -548,6 +553,10 @@ font-family: "Potta One", system-ui;
   justify-content: center;
   gap: 8px;
   flex-wrap: wrap;
+}
+
+.contact-details a {
+  text-decoration: none !important;
 }
 
 .contact-details .social-item {
@@ -650,6 +659,7 @@ font-family: "Potta One", system-ui;
     font-size: 16px;
   }
 }
+
 /* Footer End */
 
 /* -------------------------------------------------------------------------------------------------------------- */
@@ -690,4 +700,5 @@ font-family: "Potta One", system-ui;
 .back-to-top:active {
   transform: scale(0.95);
 }
+
 /* Back to Top Arrow End */
