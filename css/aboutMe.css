@@ -15,7 +15,7 @@
   height: 100%;
   /* background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,255,255,0.02)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>'); */
   background-size: cover;
-  opacity: 0.1;
+  /* opacity: 0; */
 }
 
 .about-container {
@@ -52,12 +52,12 @@
   width: 100%;
   height: auto;
   display: block;
-  filter: grayscale(20%);
+  filter: none!important;
   transition: filter 0.5s ease;
 }
 
 .profile-image-container:hover .profile-image {
-  filter: grayscale(0%);
+  filter: none !important;
 }
 
 .tech-icons {
@@ -206,10 +206,10 @@
 }
 
 .research-interests_About {
-    text-align: center;
-    padding-top: 0px;
-    margin-bottom: 40px;
-    margin-top: 30px;
+  text-align: center;
+  padding-top: 0px;
+  margin-bottom: 40px;
+  margin-top: 30px;
 }
 
 .interests-title_About {
